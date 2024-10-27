@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bioskop-Abid</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/styleUtama.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
@@ -24,9 +24,9 @@
                       Kategori Film
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#kategori-romatis">Romantis</a></li>
-                        <li><a class="dropdown-item" href="#kategori-komedi">Komedi</a></li>
-                        <li><a class="dropdown-item" href="#kategori-sejarah">Sejarah</a></li>
+                        <li><a class="dropdown-item" href="#terbaru">Terbaru</a></li>
+                        <li><a class="dropdown-item" href="#Komedi">Komedi</a></li>
+                        <li><a class="dropdown-item" href="#Sejarah">Sejarah</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -40,31 +40,18 @@
           </div>
         </div>
     </nav>
-    <div class="container-fluid banner text-center">
-        <div class="container text-center"></div>
-            <h4 class="display-6">Selamat Datang di Bioskop Abid</h4>
-            <h3 class="display-1">Mau nonton apa hari ini?</h3>
-            <a href="#terbaru">
-                <button type="button" class="btn btn-danger btn-lg">Cari Film</button>
-            </a>
+    <div class="container-fluid banner text-center" style="background: url(asset/ruanganBioskop.jpg) no-repeat center center; background-size: cover; min-height: 300px;">
+        <h4 class="display-6">Selamat Datang di Bioskop Abid</h4>
+        <h3 class="display-1">Mau nonton apa hari ini?</h3>
+        <a href="#terbaru">
+            <button type="button" class="btn btn-danger btn-lg">Cari Film</button>
+        </a>
     </div>
     <!-- Quecard film terbaru (dengan fungsi dapat discroll horizontal) -->
     <div class="container my-5 mt-5 mb-5" id="terbaru">
         <h1 class="text-center mb-4">Film Terbaru</h1>
         <div class="scroll-container">
             <!-- Movie Card 1 -->
-            <div class="card">
-                <img src="asset/terbaru1.jpeg" class="card-img-top" alt="Venom">
-                <div class="card-body">
-                    <h5 class="card-title">Genre: Drama & Romantis</h5>
-                    <p class="card-text">"Bolehkah Sekali Saja Kumenangis"</p>
-                    <form action="deskripsi_film.html" method="POST">
-                        <input type="hidden" name="movie_title" value="Venom: The Last Dance">
-                        <button type="button" class="btn btn-primary">Pesan Tiket</button>
-                    </form>
-                </div>
-            </div>
-            <!-- Movie Card 2 -->
             <div class="card">
                 <img src="asset/terbaru2.jpeg" class="card-img-top" alt="Smile">
                 <div class="card-body">
@@ -76,38 +63,50 @@
                     </form>
                 </div>
             </div>
+            <!-- Movie Card 2 -->
+            <div class="card">
+                <img src="asset/terbaru2.jpeg" class="card-img-top" alt="Smile">
+                <div class="card-body">
+                    <h5 class="card-title">Genre: Komedi</h5>
+                    <p class="card-text">"Agak Laen"</p>
+                    <form action="deskripsi_film.html" method="POST">
+                        <input type="hidden" name="movie_title" value="Smile 2">
+                        <button type="submit" class="btn btn-primary">Pesan Tiket</button>
+                    </form>
+                </div>
+            </div>
             <!-- Movie Card 3 -->
             <div class="card">
-                <img src="asset/terbaru3.jpeg" class="card-img-top" alt="Jigra">
+                <img src="asset/terbaru2.jpeg" class="card-img-top" alt="Smile">
                 <div class="card-body">
-                    <h5 class="card-title">Genre: Horor</h5>
-                    <p class="card-text">"Mangkujiwo 2""</p>
-                    <form action="booking.php" method="POST">
-                        <input type="hidden" name="movie_title" value="Jigra">
+                    <h5 class="card-title">Genre: Komedi</h5>
+                    <p class="card-text">"Agak Laen"</p>
+                    <form action="deskripsi_film.html" method="POST">
+                        <input type="hidden" name="movie_title" value="Smile 2">
                         <button type="submit" class="btn btn-primary">Pesan Tiket</button>
                     </form>
                 </div>
             </div>
             <!-- Movie Card 4 -->
             <div class="card">
-                <img src="asset/terbaru4.jpeg" class="card-img-top" alt="Jigra">
+                <img src="asset/terbaru2.jpeg" class="card-img-top" alt="Smile">
                 <div class="card-body">
-                    <h5 class="card-title">Genre: Drama & Romantis</h5>
-                    <p class="card-text">"Layangan Putus"</p>
-                    <form action="booking.php" method="POST">
-                        <input type="hidden" name="movie_title" value="Jigra">
+                    <h5 class="card-title">Genre: Komedi</h5>
+                    <p class="card-text">"Agak Laen"</p>
+                    <form action="deskripsi_film.html" method="POST">
+                        <input type="hidden" name="movie_title" value="Smile 2">
                         <button type="submit" class="btn btn-primary">Pesan Tiket</button>
                     </form>
                 </div>
             </div>
             <!-- Movie Card 5 -->
             <div class="card">
-                <img src="asset/PosterFilmBuyaHamka.jpg" class="card-img-top" alt="Jigra">
+                <img src="asset/terbaru2.jpeg" class="card-img-top" alt="Smile">
                 <div class="card-body">
-                    <h5 class="card-title">Genre: Drama & Romantis</h5>
-                    <p class="card-text">"Buya Hamka"</p>
-                    <form action="booking.php" method="POST">
-                        <input type="hidden" name="movie_title" value="Jigra">
+                    <h5 class="card-title">Genre: Komedi</h5>
+                    <p class="card-text">"Agak Laen"</p>
+                    <form action="deskripsi_film.html" method="POST">
+                        <input type="hidden" name="movie_title" value="Smile 2">
                         <button type="submit" class="btn btn-primary">Pesan Tiket</button>
                     </form>
                 </div>
@@ -116,17 +115,17 @@
         </div>
     </div>
     <!-- Quecard film terbaru (dengan fungsi dapat discroll horizontal) -->
-    <div class="container my-5 mt-5 mb-5" id="terbaru">
-        <h1 class="text-center mb-4">Film Terbaru</h1>
+    <div class="container my-5 mt-5 mb-5" id="Komedi">
+        <h1 class="text-center mb-4">Film Komedi</h1>
         <div class="scroll-container">
             <!-- Movie Card 1 -->
             <div class="card">
-                <img src="asset/terbaru1.jpeg" class="card-img-top" alt="Venom">
+                <img src="asset/terbaru2.jpeg" class="card-img-top" alt="Smile">
                 <div class="card-body">
-                    <h5 class="card-title">Genre: Drama & Romantis</h5>
-                    <p class="card-text">"Bolehkah Sekali Saja Kumenangis"</p>
-                    <form action="booking.php" method="POST">
-                        <input type="hidden" name="movie_title" value="Venom: The Last Dance">
+                    <h5 class="card-title">Genre: Komedi</h5>
+                    <p class="card-text">"Agak Laen"</p>
+                    <form action="deskripsi_film.html" method="POST">
+                        <input type="hidden" name="movie_title" value="Smile 2">
                         <button type="submit" class="btn btn-primary">Pesan Tiket</button>
                     </form>
                 </div>
@@ -137,7 +136,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Genre: Komedi</h5>
                     <p class="card-text">"Agak Laen"</p>
-                    <form action="booking.php" method="POST">
+                    <form action="deskripsi_film.html" method="POST">
                         <input type="hidden" name="movie_title" value="Smile 2">
                         <button type="submit" class="btn btn-primary">Pesan Tiket</button>
                     </form>
@@ -145,36 +144,36 @@
             </div>
             <!-- Movie Card 3 -->
             <div class="card">
-                <img src="asset/terbaru3.jpeg" class="card-img-top" alt="Jigra">
+                <img src="asset/terbaru2.jpeg" class="card-img-top" alt="Smile">
                 <div class="card-body">
-                    <h5 class="card-title">Genre: Horor</h5>
-                    <p class="card-text">"Mangkujiwo 2""</p>
-                    <form action="booking.php" method="POST">
-                        <input type="hidden" name="movie_title" value="Jigra">
+                    <h5 class="card-title">Genre: Komedi</h5>
+                    <p class="card-text">"Agak Laen"</p>
+                    <form action="deskripsi_film.html" method="POST">
+                        <input type="hidden" name="movie_title" value="Smile 2">
                         <button type="submit" class="btn btn-primary">Pesan Tiket</button>
                     </form>
                 </div>
             </div>
             <!-- Movie Card 4 -->
             <div class="card">
-                <img src="asset/terbaru4.jpeg" class="card-img-top" alt="Jigra">
+                <img src="asset/terbaru2.jpeg" class="card-img-top" alt="Smile">
                 <div class="card-body">
-                    <h5 class="card-title">Genre: Drama & Romantis</h5>
-                    <p class="card-text">"Layangan Putus"</p>
-                    <form action="booking.php" method="POST">
-                        <input type="hidden" name="movie_title" value="Jigra">
+                    <h5 class="card-title">Genre: Komedi</h5>
+                    <p class="card-text">"Agak Laen"</p>
+                    <form action="deskripsi_film.html" method="POST">
+                        <input type="hidden" name="movie_title" value="Smile 2">
                         <button type="submit" class="btn btn-primary">Pesan Tiket</button>
                     </form>
                 </div>
             </div>
             <!-- Movie Card 5 -->
             <div class="card">
-                <img src="asset/PosterFilmBuyaHamka.jpg" class="card-img-top" alt="Jigra">
+                <img src="asset/terbaru2.jpeg" class="card-img-top" alt="Smile">
                 <div class="card-body">
-                    <h5 class="card-title">Genre: Drama & Romantis</h5>
-                    <p class="card-text">"Buya Hamka"</p>
-                    <form action="booking.php" method="POST">
-                        <input type="hidden" name="movie_title" value="Jigra">
+                    <h5 class="card-title">Genre: Komedi</h5>
+                    <p class="card-text">"Agak Laen"</p>
+                    <form action="deskripsi_film.html" method="POST">
+                        <input type="hidden" name="movie_title" value="Smile 2">
                         <button type="submit" class="btn btn-primary">Pesan Tiket</button>
                     </form>
                 </div>
@@ -183,17 +182,17 @@
         </div>
     </div>
     <!-- Quecard film terbaru (dengan fungsi dapat discroll horizontal) -->
-    <div class="container my-5 mt-5 mb-5" id="terbaru">
-        <h1 class="text-center mb-4">Film Terbaru</h1>
+    <div class="container my-5 mt-5 mb-5" id="Sejarah">
+        <h1 class="text-center mb-4">Film Sejarah</h1>
         <div class="scroll-container">
             <!-- Movie Card 1 -->
             <div class="card">
-                <img src="asset/terbaru1.jpeg" class="card-img-top" alt="Venom">
+                <img src="asset/terbaru2.jpeg" class="card-img-top" alt="Smile">
                 <div class="card-body">
-                    <h5 class="card-title">Genre: Drama & Romantis</h5>
-                    <p class="card-text">"Bolehkah Sekali Saja Kumenangis"</p>
-                    <form action="booking.php" method="POST">
-                        <input type="hidden" name="movie_title" value="Venom: The Last Dance">
+                    <h5 class="card-title">Genre: Komedi</h5>
+                    <p class="card-text">"Agak Laen"</p>
+                    <form action="deskripsi_film.html" method="POST">
+                        <input type="hidden" name="movie_title" value="Smile 2">
                         <button type="submit" class="btn btn-primary">Pesan Tiket</button>
                     </form>
                 </div>
@@ -204,7 +203,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Genre: Komedi</h5>
                     <p class="card-text">"Agak Laen"</p>
-                    <form action="booking.php" method="POST">
+                    <form action="deskripsi_film.html" method="POST">
                         <input type="hidden" name="movie_title" value="Smile 2">
                         <button type="submit" class="btn btn-primary">Pesan Tiket</button>
                     </form>
@@ -212,36 +211,36 @@
             </div>
             <!-- Movie Card 3 -->
             <div class="card">
-                <img src="asset/terbaru3.jpeg" class="card-img-top" alt="Jigra">
+                <img src="asset/terbaru2.jpeg" class="card-img-top" alt="Smile">
                 <div class="card-body">
-                    <h5 class="card-title">Genre: Horor</h5>
-                    <p class="card-text">"Mangkujiwo 2""</p>
-                    <form action="booking.php" method="POST">
-                        <input type="hidden" name="movie_title" value="Jigra">
+                    <h5 class="card-title">Genre: Komedi</h5>
+                    <p class="card-text">"Agak Laen"</p>
+                    <form action="deskripsi_film.html" method="POST">
+                        <input type="hidden" name="movie_title" value="Smile 2">
                         <button type="submit" class="btn btn-primary">Pesan Tiket</button>
                     </form>
                 </div>
             </div>
             <!-- Movie Card 4 -->
             <div class="card">
-                <img src="asset/terbaru4.jpeg" class="card-img-top" alt="Jigra">
+                <img src="asset/terbaru2.jpeg" class="card-img-top" alt="Smile">
                 <div class="card-body">
-                    <h5 class="card-title">Genre: Drama & Romantis</h5>
-                    <p class="card-text">"Layangan Putus"</p>
-                    <form action="booking.php" method="POST">
-                        <input type="hidden" name="movie_title" value="Jigra">
+                    <h5 class="card-title">Genre: Komedi</h5>
+                    <p class="card-text">"Agak Laen"</p>
+                    <form action="deskripsi_film.html" method="POST">
+                        <input type="hidden" name="movie_title" value="Smile 2">
                         <button type="submit" class="btn btn-primary">Pesan Tiket</button>
                     </form>
                 </div>
             </div>
             <!-- Movie Card 5 -->
             <div class="card">
-                <img src="asset/PosterFilmBuyaHamka.jpg" class="card-img-top" alt="Jigra">
+                <img src="asset/terbaru2.jpeg" class="card-img-top" alt="Smile">
                 <div class="card-body">
-                    <h5 class="card-title">Genre: Drama & Romantis</h5>
-                    <p class="card-text">"Buya Hamka"</p>
-                    <form action="booking.php" method="POST">
-                        <input type="hidden" name="movie_title" value="Jigra">
+                    <h5 class="card-title">Genre: Komedi</h5>
+                    <p class="card-text">"Agak Laen"</p>
+                    <form action="deskripsi_film.html" method="POST">
+                        <input type="hidden" name="movie_title" value="Smile 2">
                         <button type="submit" class="btn btn-primary">Pesan Tiket</button>
                     </form>
                 </div>

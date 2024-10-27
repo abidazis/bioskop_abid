@@ -1,10 +1,12 @@
 .banner {
-    background: url(asset/ruanganBioskop.jpg) no-repeat center center;
+    /* background: url(asset/terbaru1.jpeg) no-repeat center center; */
     background-size: cover;
     padding-top: 20%;
     padding-bottom: 20%;
     color: #ffff;
+    min-height: 300px; /* Atau nilai lain yang sesuai */
 }
+
 body {
     background-color: #f8f9fa;
     font-family: Arial, sans-serif;
@@ -16,6 +18,9 @@ h1 {
     color: #333;
 }
 
+p {
+    font-size: 1rem;
+}
 /* Hero Section */
 .hero-section {
     background-image: url('path/to/theater-bg.jpg'); /* Background image of theater */
